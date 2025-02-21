@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '../app.css';
-	import Background from './Background.svelte';
+	import Background from '$lib/components/background';
 
 	let { children } = $props();
 </script>
