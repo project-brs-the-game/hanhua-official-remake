@@ -1,5 +1,5 @@
 <!-- 主内容框 -->
-<div class="fixed inset-0 -z-7 pt-13 pr-5 pb-29 pl-96">
+<div class="fixed inset-0 -z-7 pt-13 pr-5 pb-29 pl-72">
 	<div class="relative h-full w-full border-4 border-[#656565]/85">
 		<div class="absolute inset-y-0 -top-1 -bottom-1 -left-3 w-3 bg-[#0c0905]"></div>
 		<div class="absolute inset-y-0 -top-1 -bottom-1 -left-5 w-1 bg-[#0c0905]"></div>

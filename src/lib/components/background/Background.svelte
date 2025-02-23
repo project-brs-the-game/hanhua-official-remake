@@ -1,9 +1,9 @@
 <script lang="ts">
-	import ContentArea from './ContentArea.svelte';
+	import ContentBackground from './ContentBackground.svelte';
 	import Footer from './Footer.svelte';
 	import Grid from './Grid.svelte';
 </script>
 
-<ContentArea />
+<ContentBackground />
 <Footer />
 <Grid />
