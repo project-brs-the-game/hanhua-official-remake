@@ -3,24 +3,36 @@
 </div>
 
 <div
-	class="fixed inset-0 -z-9 h-screen w-screen bg-linear-to-br from-[#5594a6]/80 from-10% via-white/0 via-40% to-[#2b3419]/90 to-90%"
+	class="fixed inset-0 -z-9 h-screen w-screen bg-linear-to-br from-[#5594a6]/80 from-10% via-gray-500/25 via-40% to-[#2b3419]/90 to-90%"
 >
 	<!-- 颜色渐变叠加 -->
 </div>
-<div id="background" class="fixed inset-0 -z-10 h-screen w-screen">
+<div id="background" class="fixed inset-0 -z-10">
 	<!-- 背景灰白棋盘格子 -->
 </div>
 
 <style>
+	@keyframes slide {
+		0% {
+			transform: translate3d(0, 0, 0);
+		}
+		100% {
+			transform: translate3d(-50%, 0, 0);
+		}
+	}
+
 	#background {
 		--size: 4rem;
-		margin: 0;
+
+		animation: slide 450s linear infinite;
 		height: 100vh;
+		width: calc(var(--size) * 500);
 		background-color: #ffffff;
 		background-image:
 			linear-gradient(45deg, #e0e0e0 25%, transparent 25%), linear-gradient(-45deg, #e0e0e0 25%, transparent 25%),
 			linear-gradient(45deg, transparent 75%, #e0e0e0 75%), linear-gradient(-45deg, transparent 75%, #e0e0e0 75%);
 		background-size: var(--size) var(--size);
+		background-repeat: repeat;
 		background-position:
 			0 0,
 			0 calc(var(--size) / 2),
