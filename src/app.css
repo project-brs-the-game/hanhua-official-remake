@@ -1,8 +1,58 @@
 @import 'tailwindcss';
+@plugin "@tailwindcss/typography";
 @plugin 'tailwindcss-motion';
+@plugin 'tailwind-scrollbar' {
+	nocompatible: true;
+	preferredStrategy: 'pseudoelements';
+}
+
+/* fusion-pixel-12px-proportional-jp-latin-400-normal */
+@font-face {
+	font-family: 'Fusion Pixel 12px Proportional JP';
+	font-style: normal;
+	font-display: fallback;
+	font-weight: 400;
+	src:
+		url(@fontsource/fusion-pixel-12px-proportional-jp/files/fusion-pixel-12px-proportional-jp-latin-400-normal.woff2)
+			format('woff2'),
+		url(@fontsource/fusion-pixel-12px-proportional-jp/files/fusion-pixel-12px-proportional-jp-latin-400-normal.woff)
+			format('woff');
+}
+
+/* fusion-pixel-12px-proportional-sc-latin-400-normal */
+@font-face {
+	font-family: 'Fusion Pixel 12px Proportional SC';
+	font-style: normal;
+	font-display: fallback;
+	font-weight: 400;
+	src:
+		url(@fontsource/fusion-pixel-12px-proportional-sc/files/fusion-pixel-12px-proportional-sc-latin-400-normal.woff2)
+			format('woff2'),
+		url(@fontsource/fusion-pixel-12px-proportional-sc/files/fusion-pixel-12px-proportional-sc-latin-400-normal.woff)
+			format('woff');
+}
+
+/* fusion-pixel-12px-proportional-tc-latin-400-normal */
+@font-face {
+	font-family: 'Fusion Pixel 12px Proportional TC';
+	font-style: normal;
+	font-display: fallback;
+	font-weight: 400;
+	src:
+		url(@fontsource/fusion-pixel-12px-proportional-tc/files/fusion-pixel-12px-proportional-tc-latin-400-normal.woff2)
+			format('woff2'),
+		url(@fontsource/fusion-pixel-12px-proportional-tc/files/fusion-pixel-12px-proportional-tc-latin-400-normal.woff)
+			format('woff');
+}
 
 @font-face {
-  font-family: "Megaton";
-  src: url("$lib/fonts/Megaton.ttf");
-  font-display: swap;
+	font-family: 'Megaton';
+	src: url('$lib/fonts/Megaton.ttf');
+	font-display: swap;
+}
+
+@theme {
+	--font-pixel:
+		'Fusion Pixel 12px Proportional SC', 'Fusion Pixel 12px Proportional JP',
+		'Fusion Pixel 12px Proportional TC', 'Roboto', sans-serif;
 }

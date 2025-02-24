@@ -5,7 +5,7 @@
 	let footnote = $state('');
 </script>
 
-<div class="left fixed inset-y-0 left-10">
+<div class="left fixed inset-y-0 left-10 select-none">
 	<div class="relative flex h-full items-center">
 		<div class="w-58 bg-white/40 px-2 py-3">
 			<div id="border"></div>
@@ -79,7 +79,7 @@
 	</div>
 </div>
 
-<div class="fixed right-10 bottom-8 text-6xl text-[#aaaaaa] blur-[0.64px]">{footnote}</div>
+<div class="fixed right-10 bottom-8 text-6xl text-[#aaaaaa] font-pixel select-none">{footnote}</div>
 
 <style>
 	#border {

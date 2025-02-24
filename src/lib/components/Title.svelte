@@ -11,5 +11,5 @@
     <div class="h-1 w-6 bg-[#333333] rotate-45 absolute"></div>
     <div class="h-1 w-6 bg-[#333333] -rotate-45 absolute"></div>
   </div>
-	<h1 class="text-4xl leading-9 font-bold text-[#333333] blur-[0.25px]">{page.data.title}</h1>
+	<h1 class="text-4xl leading-9 font-bold text-[#333333] font-pixel">{page.data.title}</h1>
 </div>
