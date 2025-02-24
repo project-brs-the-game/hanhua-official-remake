@@ -1,0 +1,83 @@
+<div class="not-prose flex w-full flex-col items-center border-b border-b-white text-white pb-4 -mb-6">
+	<img src="/logo.png" alt="黑岩射手 The Game - Logo" class="h-36 invert" />
+	<p class="text-2xl">黑岩射手The Game - 非官方汉化网站</p>
+  <div class="flex items-center gap-x-2">
+    <span class="motion-preset-blink">[</span>
+    <a href="https://hysshh.github.io/" rel="noopener noreferrer">
+      <p class="group text-xs">
+        <span class="decoration-double underline-offset-4 group-hover:underline">
+          原汉化组官方网站
+        </span>
+        <svg class="-mx-0.5 -mt-0.5 inline size-3" width="800px" height="800px" viewBox="0 0 24 24">
+          <path
+            d="M21 11V3h-8v2h4v2h-2v2h-2v2h-2v2H9v2h2v-2h2v-2h2V9h2V7h2v4h2zM11 5H3v16h16v-8h-2v6H5V7h6V5z"
+            fill="white"
+            shape-rendering="crispEdges"
+          />
+        </svg>
+      </p>
+    </a>
+    <a href="https://hysshh.pages.dev/" rel="noopener noreferrer">
+      <p class="group text-xs">
+        <span class="decoration-double underline-offset-4 group-hover:underline">
+          (镜像)
+        </span>
+        <svg class="-mx-0.5 -mt-0.5 inline size-3" width="800px" height="800px" viewBox="0 0 24 24">
+          <path
+            d="M21 11V3h-8v2h4v2h-2v2h-2v2h-2v2H9v2h2v-2h2v-2h2V9h2V7h2v4h2zM11 5H3v16h16v-8h-2v6H5V7h6V5z"
+            fill="white"
+            shape-rendering="crispEdges"
+          />
+        </svg>
+      </p>
+    </a>
+    <span class="font-mono text-sm">|</span>
+    <a href="https://tieba.baidu.com/p/9456278983" rel="noopener noreferrer">
+      <p class="group text-xs">
+        <span class="decoration-double underline-offset-4 group-hover:underline">
+          百度贴吧 - 汉化发布贴
+        </span>
+        <svg class="-mx-0.5 -mt-0.5 inline size-3" width="800px" height="800px" viewBox="0 0 24 24">
+          <path
+            d="M21 11V3h-8v2h4v2h-2v2h-2v2h-2v2H9v2h2v-2h2v-2h2V9h2V7h2v4h2zM11 5H3v16h16v-8h-2v6H5V7h6V5z"
+            fill="white"
+            shape-rendering="crispEdges"
+          />
+        </svg>
+      </p>
+    </a>
+    <span class="motion-preset-blink">]</span>
+  </div>
+  <p class="text-xs">- 本站是原汉化官网的重制版，不包含任何下载链接，请到原汉化组官网或贴吧获取下载链接 -</p>
+</div>
+
+## # 启动项目原因
+
+> 作为一名骨灰粉，有一天收拾房间的时候突然找到了以前的的PSP，三下五除二的就破解了，第一时间就找了一下黑岩射手的汉化资源啊！但是，没有找到，无奈只能配合我的塑料英语（bushi）来啃生肉，心中起了一个目标，那就是汉化这款游戏，但是汉化。。。。。。首先是解包这些。
+> 
+> 本人技术有限，所以根据网上零零碎碎的教程只完成了解包，不过基础的汉化倒是可以汉化（也就仅限于汉化了哈哈哈）
+> 
+> 由于本人时间不怎么的多，所以！！！！！！！！！！这个汉化时间可能有点长！
+> 
+> 再加上那句标志性的“免责声明”，吭！
+>
+>最后，汉化我技术有限提取不出来日文，只能在源文件上修改（效率负MAX）
+>
+>初步汉化了几个打包进去顺带打几个RIP补丁，目前显示没有问题
+>
+
+## # 公告
+
+> 最近要考试啦，所以汉化工作就先放一放，各位放心，虽然会迟到，但是永远不会缺席！
+> 
+> 2025年1月28日23:05:31
+>
+> *汉化版即将发出，希望届时得到汉化补丁的盆友能够给予我们一点鼓励或者是祝福的话语！！！这对我们很重要QWQ*
+>
+> 2025年1月30日23:11:34
+> 
+> *汉化已发布，详细请移步汉化发布页：[点我](/release)*
+> 
+> 2025年2月5日00:32:21
+>
+> *修正了名单，遗漏了相当重要的成员，这是我的疏忽与失误！！后期加入的名单无法嵌入游戏（镜像已经分流，修正的话网络上流传的版本会紊乱），这一点也是我本次汉化的遗憾了。。*
