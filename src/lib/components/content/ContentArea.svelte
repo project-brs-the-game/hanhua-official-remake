@@ -6,7 +6,7 @@
 
 <div
 	class={[
-		'cut fixed top-24 right-16 bottom-40 left-128 z-10 overflow-auto scroll-smooth bg-linear-to-b from-[#43505e]/80 to-[#222222]/90 pt-6 pr-8 pb-8 pl-12',
+		'cut fixed top-24 right-16 bottom-40 left-128 z-10 overflow-auto scroll-smooth bg-linear-to-b from-[#43505e] to-[#222222]  pt-6 pr-8 pb-8 pl-12 opacity-90',
 		'scrollbar-active:scrollbar-thumb-[#adb8bb] scrollbar-hover:scrollbar-thumb-[#adb8bb]/80 scrollbar-thumb-[#adb8bb]/40 scrollbar-track-[#212222]/40 scrollbar-thin scrollbar-corner-transparent'
 	]}
 >
