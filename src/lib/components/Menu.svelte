@@ -7,16 +7,16 @@
 
 <div class="left fixed inset-y-0 left-10 select-none">
 	<div class="relative flex h-full items-center">
-		<div class="w-58 bg-white/40 px-2 py-3">
+		<div class="w-44 bg-white/40 px-2 py-3 lg:w-58">
 			<div id="border"></div>
-			<div class="space-y-2 py-2">
+			<div class="space-y-1 py-2 lg:space-y-2">
 				{#each ITEMS as { label, href, description }}
 					{@const current = href === page.url.pathname}
-					<div class="flex h-10 items-center">
+					<div class="flex h-7.5 items-center lg:h-10">
 						<a
 							{href}
 							class={[
-								'min-w-61 items-center self-stretch rounded-l-sm pr-8 pl-1 text-right font-[Megaton] text-[1.6rem] hover:bg-black hover:text-[#0000fc]',
+								'min-w-47 items-center self-stretch rounded-l-sm pr-8 pl-1 text-right font-[Megaton] text-[1.2rem] hover:bg-black hover:text-[#0000fc] lg:min-w-61 lg:text-[1.6rem]',
 								current && 'bg-black text-[#0000fc]'
 							]}
 							onmouseenter={() => {
@@ -28,26 +28,30 @@
 						>
 							{label}
 						</a>
+						<!-- 右剪头 -->
 						<div
 							data-current={current}
-							class="flex w-22 shrink-0 self-stretch opacity-0 *:h-full *:shrink-0 *:bg-black data-[current=true]:opacity-100"
+							class="flex w-16 lg:w-22 shrink-0 self-stretch opacity-0 *:h-full *:shrink-0 *:bg-black data-[current=true]:opacity-100"
 						>
-							<div class="w-8"></div>
-							<div class="arrow w-5"></div>
-							<div class="angle w-10 -translate-x-3"></div>
-							<div class="angle w-10 -translate-x-9"></div>
+							<div class="w-6 lg:w-8"></div>
+							<div class="arrow w-3.75 lg:w-5"></div>
+							<div class="angle w-7.5 lg:w-10 -translate-x-2.25 lg:-translate-x-3"></div>
+							<div class="angle w-7.5 lg:w-10 -translate-x-6.75 lg:-translate-x-9"></div>
 						</div>
+						<!-- 星星 和 齿轮动画 -->
 						<div
 							data-current={current}
-							class="flex size-12 items-center justify-center rounded-full border-4 opacity-0 data-[current=true]:opacity-100"
+							class="flex size-9 items-center justify-center rounded-full border-3 opacity-0 data-[current=true]:opacity-100 lg:size-12 lg:border-4"
 						>
-							<svg class="-mt-1 min-h-14 min-w-14" width="800px" height="800px" viewBox="0 0 32 32">
+              <!-- 星星 -->
+							<svg class="-mt-1 min-w-10 lg:min-w-14" width="800px" height="800px" viewBox="0 0 32 32">
 								<path
 									d="M16 4.588l2.833 8.719H28l-7.416 5.387 2.832 8.719L16 22.023l-7.417 5.389 2.833-8.719L4 13.307h9.167L16 4.588z"
 								/>
 							</svg>
+              <!-- 内圈 -->
 							<svg
-								class="motion-preset-spin motion-duration-4800 absolute -z-5 size-24"
+								class="motion-preset-spin motion-duration-4800 absolute -z-5 size-18 lg:size-24"
 								width="538"
 								height="538"
 								viewBox="0 0 538 538"
@@ -58,8 +62,9 @@
 									d="M517.759,244C506.026,125.838,412.023,31.885,293.839,20.227L293.826,0.147C423.068,11.932,525.971,114.782,537.837,244H517.759ZM20.241,294c11.733,118.162,105.736,212.115,223.92,223.773l0.013,20.08C114.932,526.068,12.029,423.218.163,294H20.241ZM469.2,450.157L455,436.024a249.313,249.313,0,0,0,57.773-111.387l19.622,3.9A269.282,269.282,0,0,1,469.2,450.157Zm-17.62,17.735a268.96,268.96,0,0,1-157.407,69.93l-0.013-20.077A249.037,249.037,0,0,0,437.4,453.772ZM243.839,20.255A249.031,249.031,0,0,0,101.127,83.749L86.938,69.625A268.952,268.952,0,0,1,243.826.178ZM83.467,101.445a249.353,249.353,0,0,0-58.032,110.96L5.81,208.5A269.313,269.313,0,0,1,69.274,87.316ZM2.884,223.213l19.627,3.9Q21.1,235.471,20.241,244H0.163Q1.128,233.485,2.884,223.213Zm532.392,90.606-19.627-3.9c0.864-5.253,1.578-10.557,2.11-15.915h20.078Q536.918,304.02,535.276,313.819Z"
 								/>
 							</svg>
+              <!-- 外圈 -->
 							<svg
-								class="-motion-rotate-loop-[1turn]/reset motion-ease-linear motion-duration-4800 absolute -z-5 size-48"
+								class="-motion-rotate-loop-[1turn]/reset motion-ease-linear motion-duration-4800 absolute -z-5 size-36 lg:size-48"
 								width="934"
 								height="934"
 								viewBox="0 0 934 934"
@@ -79,7 +84,7 @@
 	</div>
 </div>
 
-<div class="fixed right-10 bottom-8 text-6xl text-[#aaaaaa] font-pixel select-none">{footnote}</div>
+<div class="font-pixel fixed right-10 bottom-8 text-6xl text-[#aaaaaa] select-none">{footnote}</div>
 
 <style>
 	#border {
