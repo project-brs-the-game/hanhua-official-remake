@@ -7,16 +7,16 @@
 
 <div class="left fixed inset-y-0 left-10 select-none">
 	<div class="relative flex h-full items-center">
-		<div class="w-44 bg-white/40 px-2 py-3 lg:w-58">
+		<div class="w-44 bg-white/40 px-2 py-3 2xl:w-58">
 			<div id="border"></div>
-			<div class="space-y-1 py-2 lg:space-y-2">
+			<div class="space-y-1 py-2 2xl:space-y-2">
 				{#each ITEMS as { label, href, description }}
 					{@const current = href === page.url.pathname}
-					<div class="flex h-7.5 items-center lg:h-10">
+					<div class="flex h-7.5 items-center 2xl:h-10">
 						<a
 							{href}
 							class={[
-								'min-w-47 items-center self-stretch rounded-l-sm pr-8 pl-1 text-right font-[Megaton] text-[1.2rem] hover:bg-black hover:text-[#0000fc] lg:min-w-61 lg:text-[1.6rem]',
+								'min-w-47 items-center self-stretch rounded-l-sm pr-8 pl-1 text-right font-[Megaton] text-[1.2rem] hover:bg-black hover:text-[#0000fc] 2xl:min-w-61 2xl:text-[1.6rem]',
 								current && 'bg-black text-[#0000fc]'
 							]}
 							onmouseenter={() => {
@@ -31,27 +31,27 @@
 						<!-- 右剪头 -->
 						<div
 							data-current={current}
-							class="flex w-16 lg:w-22 shrink-0 self-stretch opacity-0 *:h-full *:shrink-0 *:bg-black data-[current=true]:opacity-100"
+							class="flex w-16 2xl:w-22 shrink-0 self-stretch opacity-0 *:h-full *:shrink-0 *:bg-black data-[current=true]:opacity-100"
 						>
-							<div class="w-6 lg:w-8"></div>
-							<div class="arrow w-3.75 lg:w-5"></div>
-							<div class="angle w-7.5 lg:w-10 -translate-x-2.25 lg:-translate-x-3"></div>
-							<div class="angle w-7.5 lg:w-10 -translate-x-6.75 lg:-translate-x-9"></div>
+							<div class="w-6 2xl:w-8"></div>
+							<div class="arrow w-3.75 2xl:w-5"></div>
+							<div class="angle w-7.5 2xl:w-10 -translate-x-2.25 2xl:-translate-x-3"></div>
+							<div class="angle w-7.5 2xl:w-10 -translate-x-6.75 2xl:-translate-x-9"></div>
 						</div>
 						<!-- 星星 和 齿轮动画 -->
 						<div
 							data-current={current}
-							class="flex size-9 items-center justify-center rounded-full border-3 opacity-0 data-[current=true]:opacity-100 lg:size-12 lg:border-4"
+							class="flex size-9 items-center justify-center rounded-full border-3 opacity-0 data-[current=true]:opacity-100 2xl:size-12 2xl:border-4"
 						>
               <!-- 星星 -->
-							<svg class="-mt-1 min-w-10 lg:min-w-14" width="800px" height="800px" viewBox="0 0 32 32">
+							<svg class="-mt-1 min-w-10 2xl:min-w-14" width="800px" height="800px" viewBox="0 0 32 32">
 								<path
 									d="M16 4.588l2.833 8.719H28l-7.416 5.387 2.832 8.719L16 22.023l-7.417 5.389 2.833-8.719L4 13.307h9.167L16 4.588z"
 								/>
 							</svg>
               <!-- 内圈 -->
 							<svg
-								class="motion-preset-spin motion-duration-4800 absolute -z-5 size-18 lg:size-24"
+								class="motion-preset-spin motion-duration-4800 absolute -z-5 size-18 2xl:size-24"
 								width="538"
 								height="538"
 								viewBox="0 0 538 538"
@@ -64,7 +64,7 @@
 							</svg>
               <!-- 外圈 -->
 							<svg
-								class="-motion-rotate-loop-[1turn]/reset motion-ease-linear motion-duration-4800 absolute -z-5 size-36 lg:size-48"
+								class="-motion-rotate-loop-[1turn]/reset motion-ease-linear motion-duration-4800 absolute -z-5 size-36 2xl:size-48"
 								width="934"
 								height="934"
 								viewBox="0 0 934 934"
