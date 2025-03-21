@@ -89,7 +89,7 @@
 		<div id="mobile-menu-bg" class="bg-gradient-to-br from-[#252a2df0] via-[#2f363cf0] to-[#43505ef0] p-4 pl-0 w-60">
 			{#each ITEMS as { label, href, description }}
 				{@const current = href === page.url.pathname}
-				<div class={['group flex items-end gap-x-1', current ? 'w-53.5' : 'w-48 transition-all hover:w-53.5']}>
+				<div class={['group flex items-end gap-x-1 h-8', current ? 'w-53.5' : 'w-48 transition-all hover:w-53.5']}>
 					<div
 						class={[
 							'mb-[9px] grow',
@@ -99,7 +99,7 @@
 					<a
 						{href}
 						class={[
-							'shrink-0  font-[Megaton] text-[1.6rem] leading-tight group-hover:text-[#0064fe]',
+							'shrink-0 font-[Megaton] text-[1.6rem] leading-tight group-hover:text-[#0064fe]',
 							current ? 'text-[#0064fe]' : 'text-[#c8c8c8]'
 						]}
 						onmouseenter={() => {
