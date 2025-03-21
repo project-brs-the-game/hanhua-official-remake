@@ -86,38 +86,42 @@
 
 <div class="left fixed inset-y-0 block select-none xl:hidden">
 	<div class="relative flex h-full items-center">
-		<div id="mobile-menu-bg" class="bg-gradient-to-br from-[#252a2df0] via-[#2f363cf0] to-[#43505ef0] p-4 pl-0 w-60">
+		<div id="mobile-menu-bg" class="w-60 bg-gradient-to-br from-[#252a2df0] via-[#2f363cf0] to-[#43505ef0] p-4 pl-0">
 			{#each ITEMS as { label, href, description }}
 				{@const current = href === page.url.pathname}
-				<div class={['group flex items-end gap-x-1 h-8', current ? 'w-53.5' : 'w-48 transition-all hover:w-53.5']}>
+				<a
+					{href}
+					class={['group flex h-8 items-end gap-x-1', current ? 'w-53.5' : 'w-48 transition-all hover:w-53.5']}
+					onmouseenter={() => {
+						footnote = description;
+					}}
+					onmouseleave={() => {
+						footnote = '';
+					}}
+				>
 					<div
 						class={[
 							'mb-[9px] grow',
 							current ? 'h-1 bg-[#0064fe]' : 'h-0.5 bg-[#54595d] group-hover:h-1 group-hover:bg-[#0064fe]'
 						]}
 					></div>
-					<a
-						{href}
+					<span
 						class={[
 							'shrink-0 font-[Megaton] text-[1.6rem] leading-tight group-hover:text-[#0064fe]',
 							current ? 'text-[#0064fe]' : 'text-[#c8c8c8]'
 						]}
-						onmouseenter={() => {
-							footnote = description;
-						}}
-						onmouseleave={() => {
-							footnote = '';
-						}}
 					>
 						{label}
-					</a>
-				</div>
+					</span>
+				</a>
 			{/each}
 		</div>
 	</div>
 </div>
 
-<div class="font-pixel fixed right-12 xl:right-10 bottom-6 xl:bottom-8 text-3xl xl:text-6xl text-[#aaaaaa] select-none">{footnote}</div>
+<div class="font-pixel fixed right-12 bottom-6 text-3xl text-[#aaaaaa] select-none xl:right-10 xl:bottom-8 xl:text-6xl">
+	{footnote}
+</div>
 
 <style>
 	#border {
