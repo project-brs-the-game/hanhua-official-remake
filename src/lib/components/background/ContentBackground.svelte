@@ -23,9 +23,9 @@
 </div>
 
 <div class="block xl:hidden">
-	<div class="fixed top-0 left-64 h-34 w-3 bg-black/60"></div>
-	<div class="fixed top-0 left-64 h-34 w-3 translate-x-5 bg-black/60"></div>
+	<div class="fixed top-0 left-8 h-34 w-3 bg-black/60 sm:left-64"></div>
+	<div class="fixed top-0 left-8 h-34 w-3 translate-x-5 bg-black/60 sm:left-64"></div>
 
-	<div class="fixed top-[calc(50dvh+8.6rem)] bottom-20 left-57 w-3 bg-black/70"></div>
-	<div class="fixed top-[calc(50dvh+8.6rem)] bottom-20 left-57 w-3 -translate-x-5 bg-black/70"></div>
+	<div class="fixed top-[calc(50dvh+8.6rem)] bottom-20 left-57 hidden w-3 bg-black/70 sm:block"></div>
+	<div class="fixed top-[calc(50dvh+8.6rem)] bottom-20 left-57 hidden w-3 -translate-x-5 bg-black/70 sm:block"></div>
 </div>

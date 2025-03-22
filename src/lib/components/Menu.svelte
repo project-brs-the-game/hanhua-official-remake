@@ -84,9 +84,17 @@
 	</div>
 </div>
 
-<div class="left fixed inset-y-0 block select-none xl:hidden">
-	<div class="relative flex h-full items-center">
-		<div id="mobile-menu-bg" class="w-60 bg-gradient-to-br from-[#252a2df0] via-[#2f363cf0] to-[#43505ef0] p-4 pl-0">
+<div class="pointer-events-none fixed inset-y-0 z-10 block select-none xl:hidden">
+	<div
+		class={[
+			'group/menu peer relative z-50 flex h-full',
+			'-translate-x-60 items-center transition-all focus-within:translate-x-0 hover:translate-x-0 sm:translate-x-0 focus-within:[&>button]:opacity-0'
+		]}
+	>
+		<div
+			id="mobile-menu"
+			class="pointer-events-auto w-60 bg-gradient-to-br from-[#252a2df0] via-[#2f363cf0] to-[#43505ef0] p-4 pl-0"
+		>
 			{#each ITEMS as { label, href, description }}
 				{@const current = href === page.url.pathname}
 				<a
@@ -116,7 +124,30 @@
 				</a>
 			{/each}
 		</div>
+		<button
+			class={[
+				'pointer-events-auto flex w-8 flex-col items-center justify-center  gap-1 py-2 group-hover/menu:opacity-0 sm:hidden',
+				'border-br border-white/25 bg-gradient-to-br from-[#252a2df0] via-[#2f363cf0] to-[#43505ef0]'
+			]}
+		>
+			<svg class="size-6 animate-pulse text-white" width="800px" height="800px" viewBox="0 0 32 32" fill="currentColor">
+				<path
+					d="M16 4.588l2.833 8.719H28l-7.416 5.387 2.832 8.719L16 22.023l-7.417 5.389 2.833-8.719L4 13.307h9.167L16 4.588z"
+				/>
+			</svg>
+			<span
+				class="animate-pulse font-[Megaton] text-[1.2rem] text-white [text-orientation:mixed] [writing-mode:vertical-rl]"
+			>
+				MENU
+			</span>
+		</button>
 	</div>
+	<div
+		class={[
+			'fixed inset-0 block -translate-x-full bg-[#252a2d]/50 opacity-0 backdrop-blur-sm transition-all duration-75 sm:hidden',
+			'peer-focus-within:translate-x-0 peer-focus-within:opacity-100 peer-hover:translate-x-0 peer-hover:opacity-100'
+		]}
+	></div>
 </div>
 
 <div class="font-pixel fixed right-12 bottom-6 text-3xl text-[#aaaaaa] select-none xl:right-10 xl:bottom-8 xl:text-6xl">
@@ -152,7 +183,7 @@
 		clip-path: polygon(0 0, 50% 50%, 0 100%, 20% 100%, 70% 50%, 20% 0);
 	}
 
-	#mobile-menu-bg {
+	#mobile-menu {
 		--corner-size: 1.5rem;
 		clip-path: polygon(calc(100% - var(--corner-size)) 0, 100% var(--corner-size), 100% 100%, 0 100%, 0 0);
 	}

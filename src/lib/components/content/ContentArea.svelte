@@ -6,7 +6,8 @@
 
 <div
 	class={[
-		'top-36 bottom-20 left-64 right-8',
+		'top-36 bottom-20 left-8 right-8',
+		'sm:top-36 sm:bottom-20 sm:left-64 sm:right-8',
 		'xl:top-24 xl:right-16 xl:left-104 2xl:left-128 xl:bottom-40',
 		'fixed z-10 overflow-auto scroll-smooth bg-linear-to-b from-[#43505e] to-[#222222] pt-6 pr-8 pb-8  pl-12 opacity-90',
 		'scrollbar-active:scrollbar-thumb-[#adb8bb] scrollbar-hover:scrollbar-thumb-[#adb8bb]/80 scrollbar-thumb-[#adb8bb]/40 scrollbar-track-[#212222]/40 scrollbar-thin scrollbar-corner-transparent',
