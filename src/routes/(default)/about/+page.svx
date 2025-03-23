@@ -1,18 +1,16 @@
-> 本站是黑岩射手汉化组官方网站的重制版，并不止真正的官网。本人与汉化组并不认识。
+> 本站是黑岩射手汉化组官方网站的重制版，并不止真正的官网，本人并未参与到汉化。
 
 <a href="https://hysshh.github.io/" rel="noopener noreferrer">
-  <p class="group text-xs">
-    <span class="decoration-double underline-offset-4 group-hover:underline">
-      原汉化组官方网站
-    </span>
-    <svg class="-mx-0.5 -mt-0.5 inline size-3" width="800px" height="800px" viewBox="0 0 24 24">
-      <path
-        d="M21 11V3h-8v2h4v2h-2v2h-2v2h-2v2H9v2h2v-2h2v-2h2V9h2V7h2v4h2zM11 5H3v16h16v-8h-2v6H5V7h6V5z"
-        fill="white"
-        shape-rendering="crispEdges"
-      />
-    </svg>
-  </p>
+  <span class="decoration-double underline-offset-4 group-hover:underline">
+    👉 原汉化组官方网站
+  </span>
+  <svg class="-mx-0.5 -mt-0.5 inline size-3" width="800px" height="800px" viewBox="0 0 24 24">
+    <path
+      d="M21 11V3h-8v2h4v2h-2v2h-2v2h-2v2H9v2h2v-2h2v-2h2V9h2V7h2v4h2zM11 5H3v16h16v-8h-2v6H5V7h6V5z"
+      fill="white"
+      shape-rendering="crispEdges"
+    />
+  </svg>
 </a>
 
 
@@ -21,3 +19,15 @@
 > 如果我个人开坑的话，估计也是和组长的经历差不多。之前也没做过PSP汉化，开坑也是一步一个脚印。但是这个游戏已经没有这个机会了。下次找个别的游戏尝试下好了，也是想学习踩坑一下。
 >
 > 在汉化发布的一周后，我在Mikufans刷到汉化的视频。知道轮子都被造完了的情况下，就想着做这个网站（主要是看到汉化组官网的千禧年怀旧网站）。而且我之前就是做过一点全栈开发的，就想着试着做一下。基本上做了一周左右把基本的都做完了，后续就是优化和补完，还有原游戏官网补完之类的额外项目。
+
+
+<a href="https://github.com/project-brs-the-game/hanhua-official-remake" rel="noopener noreferrer">
+  <span>&lt;本站源码 /&gt;</span>
+  <svg class="-mx-0.5 -mt-0.5 inline size-3" width="800px" height="800px" viewBox="0 0 24 24">
+    <path
+      d="M21 11V3h-8v2h4v2h-2v2h-2v2h-2v2H9v2h2v-2h2v-2h2V9h2V7h2v4h2zM11 5H3v16h16v-8h-2v6H5V7h6V5z"
+      fill="white"
+      shape-rendering="crispEdges"
+    />
+  </svg>
+</a>
